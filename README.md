@@ -95,7 +95,6 @@ suraksha-setu/
 
 <b>⚙️ Backend Architecture</b>
 
-cd backend
 The backend of Suraksha Setu is built using Node.js, following a modular and scalable architecture. It efficiently handles real-time SOS alerts, user management, and communication between the mobile app and dashboard.
 
 The system is structured into multiple layers to ensure clean code separation, maintainability, and scalability.
@@ -104,7 +103,6 @@ The system is structured into multiple layers to ensure clean code separation, m
 📂 Folder Structure & Description
 <br>
 🔹 config/
-
 Contains configuration files for the application.
 
 Database connection setup
@@ -112,7 +110,6 @@ Environment variables (.env)
 Third-party service configurations
 <br><br>
 🔹 controllers/
-
 Handles incoming HTTP requests and sends responses.
 
 Processes API calls
@@ -120,7 +117,6 @@ Connects routes with business logic
 Example: triggering SOS, user login
 <br><br>
 🔹 middleware/
-
 Custom middleware functions for request processing.
 
 Authentication & authorization
@@ -128,7 +124,6 @@ Error handling
 Request validation
 <br><br>
 🔹 models/
-
 Defines the data structure for the database.
 
 User schema
@@ -137,7 +132,6 @@ Location tracking data
 
 <br>
 🔹 routes/
-
 Defines API endpoints and maps them to controllers.
 
 /api/auth
@@ -146,32 +140,27 @@ Defines API endpoints and maps them to controllers.
 
 <br>
 🔹 services/
-
 Contains core business logic of the application.
-
 SOS alert processing
 Notification handling
 Integration with external APIs (maps, messaging)
-
 <br>
 🔹 utils/
-
 Utility/helper functions used across the project.
-
 Common reusable logic
 Formatting, validations, helpers
 
 <br>
-🔥 Key Highlights
-⚡ Built on Node.js for high performance and scalability
-🧩 Modular architecture for easy maintenance
-🔐 Secure authentication using middleware
-📡 Real-time SOS handling and alert system
+🔥 Key Highlights<br>
+⚡ Built on Node.js for high performance and scalability<br>
+🧩 Modular architecture for easy maintenance<br>
+🔐 Secure authentication using middleware<br>
+📡 Real-time SOS handling and alert system<br>
 🔗 Clean separation of concerns (MVC + Service Layer)
 <br>
 
 <b>🎨 Frontend Architecture (React.js)</b>
-cd frontend
+<br>
 The frontend of Suraksha Setu is developed using React.js, providing a fast, responsive, and interactive user interface for both users and administrators.
 <br>
 It ensures seamless communication with the backend APIs and delivers a clean, real-time dashboard experience for monitoring SOS alerts.
