@@ -73,7 +73,7 @@ suraksha-setu/
 
 
 <p align="center">
-  <img src="assets/landing page.jpeg" width="100%"/><br>
+  <img src="assets/landing page.jpeg" width="300%"/><br>
   <b>Landing Page</b>
 </p>
 
