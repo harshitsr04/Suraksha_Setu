@@ -1,50 +1,177 @@
-# Welcome to your Expo app 👋
+🚨 Suraksha Setu – AI Powered Emergency Voice Alert System
+📌 Table of Contents
+Overview
+<ul>
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#problem-statement">Problem Statement</a></li>
+  <li><a href="#dataset--inputs">Dataset & Inputs</a></li>
+  <li><a href="#tools--technologies">Tools & Technologies</a></li>
+  <li><a href="#project-structure">Project Structure</a></li>
+  <li><a href="#core-features">Core Features</a></li>
+  <li><a href="#logic--workflow">Logic & Workflow</a></li>
+  <li><a href="#user-interface--design">User Interface & Design</a></li>
+  <li><a href="#strengths--limitations">Strengths & Limitations</a></li>
+  <li><a href="#recommendations--future-work">Recommendations & Future Work</a></li>
+  <li><a href="#how-to-run-this-project">How to Run This Project</a></li>
+  <li><a href="#author--contact">Author & Contact</a></li>
+</ul>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+🧠 Overview
 
-## Get started
+Suraksha Setu (EVA – Emergency Voice Assistant) is a smart emergency response system that allows users to send SOS alerts using voice commands, even when they cannot physically access their phones.
 
-1. Install dependencies
+It combines AI-based voice detection, real-time location tracking, and instant alert systems to provide rapid assistance during critical situations.
 
-   ```bash
-   npm install
-   ```
+⚠️ Problem Statement
 
-2. Start the app
+In emergency situations:
 
-   ```bash
-   npx expo start
-   ```
+Victims may not be able to unlock their phone
+Manual SOS actions may not be possible
+Time delay can cost lives
 
-In the output, you'll find options to open the app in a
+👉 Existing solutions depend heavily on manual interaction, making them unreliable in real emergencies.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+💡 Proposed Solution
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Suraksha Setu introduces:
 
-## Get a fresh project
+🎙️ Voice-triggered SOS system
+📡 Background listening mechanism
+📍 Real-time GPS tracking
+🚨 Instant alert delivery
 
-When you're ready, run:
+All combined into a fully automated emergency response system.
 
-```bash
-npm run reset-project
-```
+🔥 Key Features
+🎙️ Voice Trigger Detection
+Trigger phrase: “EVA HELP ME”
+Works in:
+Background mode
+Locked screen state
+Uses:
+Speech-to-text processing
+Loudness threshold (~75–80 dB)
+AI-based filtering
+🚨 Smart SOS Alert System
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+On trigger:
 
-## Learn more
+Sends 📍 live location
+Sends 💬 emergency message
+Sends 🎧 optional audio snippet
+Alerts:
+Family
+Friends
+Authorities
+📍 Live Location Tracking
+Continuous GPS updates
+Real-time monitoring via dashboard
+🆘 Manual SOS Button
+One-tap emergency trigger inside app
+🔐 Secure Authentication
+Firebase Auth / Spring Security
+Google Sign-In support
+🏗️ System Architecture
+User Voice Input
+      ↓
+Flutter Mobile App
+      ↓
+Voice Detection Engine (AI/ML)
+      ↓
+Spring Boot Backend (REST APIs)
+      ↓
+Database (MySQL/PostgreSQL)
+      ↓
+Web Dashboard (React)
+      ↓
+Emergency Contacts / Authorities
+⚙️ Tech Stack
+Layer	Technology	Purpose
+Mobile	Flutter	UI + Voice Detection
+Backend	Spring Boot (Java)	API & Logic
+Database	MySQL / PostgreSQL	Data storage
+AI/ML	Whisper / Google Speech API	Voice recognition
+Auth	Firebase / Spring Security	Authentication
+Notifications	Firebase Cloud Messaging	Alerts
+Maps	Google Maps API	Location tracking
+Deployment	Docker / AWS / Render	Hosting
+🔄 Workflow
+App runs in background 🎧
+Detects “EVA HELP ME”
+Confirms via AI model
+Activates SOS 🚨
+Fetches GPS 📍
+Sends alert to backend
+Backend:
+Stores event
+Sends notifications
+Dashboard displays alert in real-time
+🔗 API Endpoints
+Endpoint	Method	Description
+/api/auth/register	POST	Register user
+/api/auth/login	POST	Login
+/api/sos/trigger	POST	Trigger SOS
+/api/sos/getAll	GET	Fetch alerts
+/api/user/{id}	GET	User info
+/api/location/update	POST	Update location
+📂 Project Structure
+suraksha-setu/
+│
+├── mobile-app/
+│   ├── lib/
+│   ├── assets/
+│   └── main.dart
+│
+├── backend/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   └── model/
+│
+├── dashboard/
+│   ├── components/
+│   ├── pages/
+│   └── services/
+│
+└── README.md
+⚙️ Installation Guide
+Backend
+cd backend
+mvn clean install
+mvn spring-boot:run
+Flutter App
+cd mobile-app
+flutter pub get
+flutter run
+Dashboard
+cd dashboard
+npm install
+npm start
+⚡ Hackathon MVP
+✅ Voice trigger working
+✅ SOS alert system
+✅ GPS location sharing
+✅ Basic dashboard
+🚀 Future Enhancements
+🎯 Distress sound recognition
+📡 Offline SOS mode
+⌚ Smartwatch integration
+🤖 AI risk-level prioritization
+🛰️ Satellite-based alerts
+📸 Screenshots
 
-To learn more about developing your project with Expo, look at the following resources:
+Add your app screenshots here
+Example:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+App UI
+SOS Trigger
+Dashboard View
+🧾 Conclusion
 
-## Join the community
+Suraksha Setu is designed to save lives when users cannot act.
+It bridges the gap between inability and immediate response using AI and automation.
 
-Join our community of developers creating universal apps.
+⭐ If you like this project
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Give it a ⭐ on GitHub and support innovation in safety tech!
