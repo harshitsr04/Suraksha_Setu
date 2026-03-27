@@ -59,6 +59,9 @@ suraksha-setu/
 <ul> <li>🎯 Distress sound detection</li> <li>📡 Offline alert system</li> <li>⌚ Wearable integration</li> <li>🤖 AI-based alert prioritization</li> </ul>
 <a id="how-to-run-this-project"></a> ⚙️ How to Run This Project
 
+<br>
+
+  
 <b>Backend:</b>
 
 cd backend
@@ -68,5 +71,8 @@ mvn spring-boot:run
 
 cd mobile-app
 flutter run
-<a id="author--contact"></a> 👨‍💻 Author & Contact
-<p> <b>Harshit Srivastava</b><br> 📧 Email: your-email@example.com<br> 🌐 GitHub: https://github.com/harshitsr04 </p>
+<a id="author--contact"></a> <br>
+
+👨‍💻 Author & Contact
+
+<p> <b>Harshit Srivastava</b><br> 📧 Email: your-harshitsr22@gmail.com<br> 🌐 GitHub: https://github.com/harshitsr04 </p>
