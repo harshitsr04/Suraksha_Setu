@@ -1,177 +1,71 @@
-🚨 Suraksha Setu – AI Powered Emergency Voice Alert System
+🚨 Suraksha Setu – Emergency Voice Alert System
 📌 Table of Contents
-Overview
-<ul>
-  <li><a href="#overview">Overview</a></li>
-  <li><a href="#problem-statement">Problem Statement</a></li>
-  <li><a href="#dataset--inputs">Dataset & Inputs</a></li>
-  <li><a href="#tools--technologies">Tools & Technologies</a></li>
-  <li><a href="#project-structure">Project Structure</a></li>
-  <li><a href="#core-features">Core Features</a></li>
-  <li><a href="#logic--workflow">Logic & Workflow</a></li>
-  <li><a href="#user-interface--design">User Interface & Design</a></li>
-  <li><a href="#strengths--limitations">Strengths & Limitations</a></li>
-  <li><a href="#recommendations--future-work">Recommendations & Future Work</a></li>
-  <li><a href="#how-to-run-this-project">How to Run This Project</a></li>
-  <li><a href="#author--contact">Author & Contact</a></li>
-</ul>
+<div align="left">
 
-🧠 Overview
+<a href="#overview">🔹 Overview</a><br>
+<a href="#problem-statement">🔹 Problem Statement</a><br>
+<a href="#dataset--inputs">🔹 Dataset & Inputs</a><br>
+<a href="#tools--technologies">🔹 Tools & Technologies</a><br>
+<a href="#project-structure">🔹 Project Structure</a><br>
+<a href="#core-features">🔹 Core Features</a><br>
+<a href="#logic--workflow">🔹 Logic & Workflow</a><br>
+<a href="#user-interface--design">🔹 User Interface & Design</a><br>
+<a href="#strengths--limitations">🔹 Strengths & Limitations</a><br>
+<a href="#recommendations--future-work">🔹 Recommendations & Future Work</a><br>
+<a href="#how-to-run-this-project">🔹 How to Run This Project</a><br>
+<a href="#author--contact">🔹 Author & Contact</a><br>
 
-Suraksha Setu (EVA – Emergency Voice Assistant) is a smart emergency response system that allows users to send SOS alerts using voice commands, even when they cannot physically access their phones.
+</div>
+<hr>
+<a id="overview"></a> 🧠 Overview
 
-It combines AI-based voice detection, real-time location tracking, and instant alert systems to provide rapid assistance during critical situations.
+Suraksha Setu (EVA) is an AI-powered emergency alert system that enables users to send SOS signals using voice commands, even when they cannot physically access their device.
 
-⚠️ Problem Statement
+It integrates voice recognition, background listening, and real-time GPS tracking to provide immediate assistance during critical situations.
 
-In emergency situations:
+<a id="problem-statement"></a> ⚠️ Problem Statement
 
-Victims may not be able to unlock their phone
-Manual SOS actions may not be possible
-Time delay can cost lives
+In emergency scenarios:
 
-👉 Existing solutions depend heavily on manual interaction, making them unreliable in real emergencies.
-
-💡 Proposed Solution
-
-Suraksha Setu introduces:
-
-🎙️ Voice-triggered SOS system
-📡 Background listening mechanism
-📍 Real-time GPS tracking
-🚨 Instant alert delivery
-
-All combined into a fully automated emergency response system.
-
-🔥 Key Features
-🎙️ Voice Trigger Detection
-Trigger phrase: “EVA HELP ME”
-Works in:
-Background mode
-Locked screen state
-Uses:
-Speech-to-text processing
-Loudness threshold (~75–80 dB)
-AI-based filtering
-🚨 Smart SOS Alert System
-
-On trigger:
-
-Sends 📍 live location
-Sends 💬 emergency message
-Sends 🎧 optional audio snippet
-Alerts:
-Family
-Friends
-Authorities
-📍 Live Location Tracking
-Continuous GPS updates
-Real-time monitoring via dashboard
-🆘 Manual SOS Button
-One-tap emergency trigger inside app
-🔐 Secure Authentication
-Firebase Auth / Spring Security
-Google Sign-In support
-🏗️ System Architecture
-User Voice Input
-      ↓
-Flutter Mobile App
-      ↓
-Voice Detection Engine (AI/ML)
-      ↓
-Spring Boot Backend (REST APIs)
-      ↓
-Database (MySQL/PostgreSQL)
-      ↓
-Web Dashboard (React)
-      ↓
-Emergency Contacts / Authorities
-⚙️ Tech Stack
-Layer	Technology	Purpose
-Mobile	Flutter	UI + Voice Detection
-Backend	Spring Boot (Java)	API & Logic
-Database	MySQL / PostgreSQL	Data storage
-AI/ML	Whisper / Google Speech API	Voice recognition
-Auth	Firebase / Spring Security	Authentication
-Notifications	Firebase Cloud Messaging	Alerts
-Maps	Google Maps API	Location tracking
-Deployment	Docker / AWS / Render	Hosting
-🔄 Workflow
-App runs in background 🎧
-Detects “EVA HELP ME”
-Confirms via AI model
-Activates SOS 🚨
-Fetches GPS 📍
-Sends alert to backend
-Backend:
-Stores event
-Sends notifications
-Dashboard displays alert in real-time
-🔗 API Endpoints
-Endpoint	Method	Description
-/api/auth/register	POST	Register user
-/api/auth/login	POST	Login
-/api/sos/trigger	POST	Trigger SOS
-/api/sos/getAll	GET	Fetch alerts
-/api/user/{id}	GET	User info
-/api/location/update	POST	Update location
-📂 Project Structure
+<ul> <li>Users may not be able to unlock their phone</li> <li>Manual SOS actions are not always possible</li> <li>Time delay can result in serious consequences</li> </ul> <p><b>👉 Existing solutions rely heavily on manual interaction.</b></p>
+<a id="dataset--inputs"></a> 📂 Dataset & Inputs
+<ul> <li>🎙️ Voice input (keyword detection: <b>"EVA HELP ME"</b>)</li> <li>📍 GPS location data</li> <li>🎧 Background audio stream</li> <li>👤 User profile & emergency contacts</li> </ul>
+<a id="tools--technologies"></a> ⚙️ Tools & Technologies
+<table> <tr><th>Layer</th><th>Technology</th></tr> <tr><td>Mobile App</td><td>Flutter</td></tr> <tr><td>Backend</td><td>Spring Boot (Java)</td></tr> <tr><td>Database</td><td>MySQL / PostgreSQL</td></tr> <tr><td>AI/ML</td><td>Whisper / Google Speech API</td></tr> <tr><td>Authentication</td><td>Firebase Auth / Spring Security</td></tr> <tr><td>Notifications</td><td>Firebase Cloud Messaging</td></tr> <tr><td>Maps</td><td>Google Maps API</td></tr> </table>
+<a id="project-structure"></a> 📁 Project Structure
 suraksha-setu/
 │
 ├── mobile-app/
-│   ├── lib/
-│   ├── assets/
-│   └── main.dart
-│
 ├── backend/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   └── model/
-│
 ├── dashboard/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-│
 └── README.md
-⚙️ Installation Guide
-Backend
+<a id="core-features"></a> 🔥 Core Features
+<ul> <li>🎙️ Voice Trigger SOS ("EVA HELP ME")</li> <li>🚨 Automatic Emergency Alerts</li> <li>📍 Real-time Location Tracking</li> <li>🆘 Manual Panic Button</li> <li>🔐 Secure Authentication</li> </ul>
+<a id="logic--workflow"></a> 🔄 Logic & Workflow
+<ol> <li>App listens in background 🎧</li> <li>Detects trigger phrase</li> <li>Validates using AI model</li> <li>Activates SOS 🚨</li> <li>Fetches GPS location 📍</li> <li>Sends alert to backend</li> <li>Notifies emergency contacts</li> </ol>
+<a id="user-interface--design"></a> 🎨 User Interface & Design
+<ul> <li>📱 Clean and minimal Flutter UI</li> <li>⚡ One-tap SOS button</li> <li>🗺️ Dashboard with real-time map view</li> <li>📊 Alert monitoring panel</li> </ul>
+<a id="strengths--limitations"></a> ⚖️ Strengths & Limitations
+
+<b>Strengths:</b>
+
+<ul> <li>Hands-free emergency activation</li> <li>Real-time response system</li> <li>Scalable backend architecture</li> </ul>
+
+<b>Limitations:</b>
+
+<ul> <li>Background listening consumes battery</li> <li>Internet required for real-time alerts</li> <li>False triggers possible (without advanced AI filtering)</li> </ul>
+<a id="recommendations--future-work"></a> 🚀 Recommendations & Future Work
+<ul> <li>🎯 Distress sound detection</li> <li>📡 Offline alert system</li> <li>⌚ Wearable integration</li> <li>🤖 AI-based alert prioritization</li> </ul>
+<a id="how-to-run-this-project"></a> ⚙️ How to Run This Project
+
+<b>Backend:</b>
+
 cd backend
-mvn clean install
 mvn spring-boot:run
-Flutter App
+
+<b>Frontend:</b>
+
 cd mobile-app
-flutter pub get
 flutter run
-Dashboard
-cd dashboard
-npm install
-npm start
-⚡ Hackathon MVP
-✅ Voice trigger working
-✅ SOS alert system
-✅ GPS location sharing
-✅ Basic dashboard
-🚀 Future Enhancements
-🎯 Distress sound recognition
-📡 Offline SOS mode
-⌚ Smartwatch integration
-🤖 AI risk-level prioritization
-🛰️ Satellite-based alerts
-📸 Screenshots
-
-Add your app screenshots here
-Example:
-
-App UI
-SOS Trigger
-Dashboard View
-🧾 Conclusion
-
-Suraksha Setu is designed to save lives when users cannot act.
-It bridges the gap between inability and immediate response using AI and automation.
-
-⭐ If you like this project
-
-Give it a ⭐ on GitHub and support innovation in safety tech!
+<a id="author--contact"></a> 👨‍💻 Author & Contact
+<p> <b>Harshit Srivastava</b><br> 📧 Email: your-email@example.com<br> 🌐 GitHub: https://github.com/harshitsr04 </p>
