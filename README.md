@@ -158,7 +158,7 @@ Formatting, validations, helpers
 📡 Real-time SOS handling and alert system<br>
 🔗 Clean separation of concerns (MVC + Service Layer)
 <br>
-
+<br><br><br><br>
 <b>🎨 Frontend Architecture (React.js)</b>
 <br>
 The frontend of Suraksha Setu is developed using React.js, providing a fast, responsive, and interactive user interface for both users and administrators.
