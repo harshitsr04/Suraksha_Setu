@@ -73,21 +73,21 @@ suraksha-setu/
 
 
 <p align="center">
-  <img src="assets/landing-page.jpeg" width="100%"/><br>
+  <img src="assets/landing page.jpeg" width="100%"/><br>
   <b>Landing Page</b>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="assets/onboarding.png" width="100%"/><br>
+  <img src="assets/SurakshaSetu App Onboarding Process.png" width="100%"/><br>
   <b>Onboarding Process</b>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="assets/hero.jpeg" width="100%"/><br>
+  <img src="assets/hero section.jpeg" width="100%"/><br>
   <b>Hero Section</b>
 </p>
 <br>
