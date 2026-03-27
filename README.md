@@ -61,7 +61,31 @@ suraksha-setu/
 
 <br>
 
-  
+
+<br>
+
+<hr>
+
+<h2 id="screenshots">📸 Screenshots</h2>
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/landingpage.jpeg" width="250"/><br>
+      <b>Landing Page</b>
+    </td>
+    <td align="center">
+      <img src="assets/SurakshaSetu App Onboarding Process.png" width="250"/><br>
+      <b>Onboarding Process</b>
+    </td>
+    <td align="center">
+      <img src="assets/hero section.jpeg" width="250"/><br>
+      <b>Hero Section</b>
+    </td>
+  </tr>
+</table>
+
+<br>
 <b>Backend:</b>
 
 cd backend
