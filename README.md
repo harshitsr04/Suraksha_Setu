@@ -13,6 +13,8 @@
   <li><a href="#strengths--limitations">Strengths & Limitations</a></li>
   <li><a href="#recommendations--future-work">Recommendations & Future Work</a></li>
   <li><a href="#how-to-run-this-project">How to Run This Project</a></li>
+  <li><a href="#backend-architecture">Backend Architecture</a></li>
+  <li><a href="#frontend-architecture">Frontend Architecture</a></li>
   <li><a href="#author--contact">Author & Contact</a></li>
 </ul>
 
@@ -129,78 +131,104 @@ suraksha-setu/
 <br>
 <br>
 
-<b>⚙️ Backend Architecture</b>
+<h2 id="backend-architecture">⚙️ Backend Architecture</h2>
 
-The backend of Suraksha Setu is built using Node.js, following a modular and scalable architecture. It efficiently handles real-time SOS alerts, user management, and communication between the mobile app and dashboard.
+<p>
+The backend of Suraksha Setu is built using Node.js, following a modular and scalable architecture. 
+It efficiently handles real-time SOS alerts, user management, and communication between the mobile app and dashboard.
+</p>
 
+<p>
 The system is structured into multiple layers to ensure clean code separation, maintainability, and scalability.
-<br>
+</p>
 
-📂 Folder Structure & Description
-<br>
-🔹 config/
-Contains configuration files for the application.
+<h3>📂 Folder Structure & Description</h3>
 
-Database connection setup
-Environment variables (.env)
-Third-party service configurations
-<br><br>
-🔹 controllers/
-Handles incoming HTTP requests and sends responses.
+<ul>
+  <li>
+    <b>🔹 config/</b>
+    <ul>
+      <li>Database connection setup</li>
+      <li>Environment variables (.env)</li>
+      <li>Third-party service configurations</li>
+    </ul>
+  </li>
 
-Processes API calls
-Connects routes with business logic
-Example: triggering SOS, user login
-<br><br>
-🔹 middleware/
-Custom middleware functions for request processing.
+  <li>
+    <b>🔹 controllers/</b>
+    <ul>
+      <li>Handles incoming HTTP requests and responses</li>
+      <li>Processes API calls</li>
+      <li>Connects routes with business logic</li>
+      <li>Example: triggering SOS, user login</li>
+    </ul>
+  </li>
 
-Authentication & authorization
-Error handling
-Request validation
-<br><br>
-🔹 models/
-Defines the data structure for the database.
+  <li>
+    <b>🔹 middleware/</b>
+    <ul>
+      <li>Authentication & authorization</li>
+      <li>Error handling</li>
+      <li>Request validation</li>
+    </ul>
+  </li>
 
-User schema
-SOS alert schema
-Location tracking data
+  <li>
+    <b>🔹 models/</b>
+    <ul>
+      <li>User schema</li>
+      <li>SOS alert schema</li>
+      <li>Location tracking data</li>
+    </ul>
+  </li>
 
-<br>
-🔹 routes/
-Defines API endpoints and maps them to controllers.
+  <li>
+    <b>🔹 routes/</b>
+    <ul>
+      <li>/api/auth</li>
+      <li>/api/sos</li>
+      <li>/api/user</li>
+    </ul>
+  </li>
 
-/api/auth
-/api/sos
-/api/user
+  <li>
+    <b>🔹 services/</b>
+    <ul>
+      <li>SOS alert processing</li>
+      <li>Notification handling</li>
+      <li>Integration with external APIs (maps, messaging)</li>
+    </ul>
+  </li>
 
-<br>
-🔹 services/
-Contains core business logic of the application.
-SOS alert processing
-Notification handling
-Integration with external APIs (maps, messaging)
-<br>
-🔹 utils/
-Utility/helper functions used across the project.
-Common reusable logic
-Formatting, validations, helpers
+  <li>
+    <b>🔹 utils/</b>
+    <ul>
+      <li>Common reusable logic</li>
+      <li>Formatting, validations, helpers</li>
+    </ul>
+  </li>
+</ul>
 
-<br>
-🔥 Key Highlights<br>
-⚡ Built on Node.js for high performance and scalability<br>
-🧩 Modular architecture for easy maintenance<br>
-🔐 Secure authentication using middleware<br>
-📡 Real-time SOS handling and alert system<br>
-🔗 Clean separation of concerns (MVC + Service Layer)
-<br>
-<br><br><br><br>
-<b>🎨 Frontend Architecture (React.js)</b>
-<br>
+<h3>🔥 Key Highlights</h3>
+<ul>
+  <li>⚡ Built on Node.js for high performance and scalability</li>
+  <li>🧩 Modular architecture for easy maintenance</li>
+  <li>🔐 Secure authentication using middleware</li>
+  <li>📡 Real-time SOS handling and alert system</li>
+  <li>🔗 Clean separation of concerns (MVC + Service Layer)</li>
+</ul>
+
+<hr>
+
+<h2 id="frontend-architecture">🎨 Frontend Architecture (React.js)</h2>
+
+<p>
 The frontend of Suraksha Setu is developed using React.js, providing a fast, responsive, and interactive user interface for both users and administrators.
-<br>
-It ensures seamless communication with the backend APIs and delivers a clean, real-time dashboard experience for monitoring SOS alerts.
+</p>
 
-👨‍💻 Author & Contact
+<p>
+It ensures seamless communication with the backend APIs and delivers a clean, real-time dashboard experience for monitoring SOS alerts.
+</p>
+<h2 id="author--contact">👨‍💻 Author & Contact</h2>
 
 <p> <b>Harshit Srivastava</b><br> 📧 Email: your-harshitsr22@gmail.com<br> 🌐 GitHub: https://github.com/harshitsr04 </p>
